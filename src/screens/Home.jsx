@@ -127,7 +127,7 @@ export default function Home() {
 
           <View style={tw`flex-row mt-4`}>
             <TouchableOpacity
-              style={[tw`flex-1 py-2 rounded-xl mr-2 items-center`, { backgroundColor: theme.colors.primary }]}
+              style={[tw`flex-1 py-2 rounded-xl mr-2 items-center`, { backgroundColor: 'red' }]}
             >
               <Text style={tw`text-white font-medium`}>Pay Now</Text>
             </TouchableOpacity>
