@@ -19,7 +19,7 @@ const ChatAI= ({ navigation }) => {
 
   return (
     <LinearGradient
-      colors={theme.gradients.splash}
+      colors={theme.gradients.chat}
       start={{ x: 0, y: 0 }}
       end={{ x: 0.5, y: 1 }}
       style={tw`flex-1`}
@@ -30,9 +30,9 @@ const ChatAI= ({ navigation }) => {
           onPress={() => navigation.goBack()}
         >
 
-          <Ionicons name="arrow-back" size={24} color="white" />
+          <Ionicons name="arrow-back" size={24} color="" />
         </TouchableOpacity>
-        <Text style={tw`text-white text-lg font-semibold ml-3`}>
+        <Text style={tw`text-black text-lg font-semibold ml-3`}>
           Chat with AI bot
         </Text>
       </View>
@@ -63,6 +63,7 @@ const ChatAI= ({ navigation }) => {
 
           {/* BOT MESSAGE */}
           <View style={[tw`mt-6 flex-row items-start`, { maxWidth: "90%" }]}>
+            {/* bot avatar */}
             <LinearGradient
               colors={theme.AIgradients.linear}
               start={{ x: 0, y: 0 }}
@@ -72,26 +73,15 @@ const ChatAI= ({ navigation }) => {
               <Ionicons name="sparkles" size={18} color="white" />
             </LinearGradient>
 
-            <LinearGradient
-              colors={theme.AIgradients.linear}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 1 }}
-              style={tw`p-[1px] rounded-2xl flex-shrink`}
-            >
-              <View
-                style={[
-                  tw`px-4 py-3 rounded-2xl`,
-                  { backgroundColor: "rgba(255,255,255,0.05)", maxWidth: "85%" },
-                ]}
-              >
-                <Text style={tw`text-white`}>
-                  Of course! For an unforgettable adventure, you could explore
-                  the Amazon Rainforest in Brazil, trek the Himalayas in Nepal,
-                  or go on a safari in Kenya. Do you prefer jungle, mountains,
-                  or wildlife?
-                </Text>
-              </View>
-            </LinearGradient>
+            {/* bot bubble: white background with dark text */}
+            <View style={[tw`px-4 py-3 rounded-2xl`, { backgroundColor: '#FFFFFF', maxWidth: '85%' }]}>
+              <Text style={[tw`text-black`]}> 
+                Of course! For an unforgettable adventure, you could explore
+                the Amazon Rainforest in Brazil, trek the Himalayas in Nepal,
+                or go on a safari in Kenya. Do you prefer jungle, mountains,
+                or wildlife?
+              </Text>
+            </View>
           </View>
 
           {/* Placeholder Image */}
@@ -128,25 +118,13 @@ const ChatAI= ({ navigation }) => {
               <Ionicons name="sparkles" size={18} color="white" />
             </LinearGradient>
 
-            <LinearGradient
-              colors={theme.AIgradients.linear}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 1 }}
-              style={tw`p-[1px] rounded-2xl flex-shrink`}
-            >
-              <View
-                style={[
-                  tw`px-4 py-3 rounded-2xl`,
-                  { backgroundColor: "rgba(255,255,255,0.05)", maxWidth: "85%" },
-                ]}
-              >
-                <Text style={tw`text-white`}>
-                  That’s the Annapurna Circuit in Nepal, one of the most famous
-                  trekking routes in the world. Known for breathtaking
-                  landscapes and cultural experiences.
-                </Text>
-              </View>
-            </LinearGradient>
+            <View style={[tw`px-4 py-3 rounded-2xl`, { backgroundColor: '#FFFFFF', maxWidth: '85%' }]}>
+              <Text style={tw`text-black`}>
+                That’s the Annapurna Circuit in Nepal, one of the most famous
+                trekking routes in the world. Known for breathtaking
+                landscapes and cultural experiences.
+              </Text>
+            </View>
           </View>
         </ScrollView>
 

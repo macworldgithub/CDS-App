@@ -4,10 +4,10 @@ export const theme = {
     secondary: "#2d82fe",
   },
   gradients: {
-splash: ["#40000A", "#3E0B5C", "#7A1FA2"]
- // dark green → black → dark blue
+    splash: ["#171717", "#6F31EE", "#0e2c43"], // dark green → black → dark blue
+    chat: ["#D9ECFF", "#FFFFFF", "#FFD6F6"],
   },
   AIgradients: {
-    linear: [ "#1D5E8E","#26E359"],
+    linear: ["#5257CE", "#5257CE"],
   },
 };

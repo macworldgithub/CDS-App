@@ -113,7 +113,7 @@ const PrivacyConsent = () => {
             <TouchableOpacity
               style={[
                 tw`flex-1 rounded-xl py-3 ml-2 items-center justify-center`,
-                { backgroundColor: theme.colors.primary },
+                { backgroundColor: 'red' },
               ]}
               disabled={!gdprChecked || !ccpaChecked}
             >
