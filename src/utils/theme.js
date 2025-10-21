@@ -4,7 +4,11 @@ export const theme = {
     secondary: "#2d82fe",
   },
   gradients: {
-    splash: ["#171717", "#6F31EE", "#0e2c43"], // dark green → black → dark blue
+    splash: [
+    "#8a0202ff", 
+    "#550bc5ff", 
+    "#c42792ff", 
+  ],
     chat: ["#D9ECFF", "#FFFFFF", "#FFD6F6"],
   },
   AIgradients: {
