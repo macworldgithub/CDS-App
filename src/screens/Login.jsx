@@ -50,7 +50,7 @@ const Login = () => {
       if (result.success) {
         await AsyncStorage.setItem("lastEmail", emailInput.trim());
         await AsyncStorage.setItem("lastPin", pinInput);
-        navigation.navigate("PrivacyConsent");
+         navigation.navigate("Home");
         return;
       }
       Alert.alert("Authentication Failed", "Please try again or use PIN.");
